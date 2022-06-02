@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Login from "../components/auth/Login"
 import Register from "../components/auth/Register"
 import Home from "../components/Home"
+import DashboardRoutes from "./DashboardRoutes"
 import { PrivateRouters } from "./PrivateRoutes"
 import { PublicRouters } from "./PublicRoutes"
 
@@ -50,13 +51,13 @@ function AppRouter() {
 
                   } />
 
-                  <Route path="/*" element={
-                      <PrivateRouters isAutentica={isLoggedIn}>
-                          <Home/>
-                      </PrivateRouters>
-                  } />
-              </Routes>
-          </BrowserRouter>
+                    <Route path="/*" element={
+                        <PrivateRouters isAutentica={isLoggedIn}>
+                            <DashboardRoutes />
+                        </PrivateRouters>
+                    } />
+                </Routes>
+            </BrowserRouter>
 
       </>
   );

@@ -26,7 +26,7 @@ const Register = () => {
   return (
     <>
       <div style={{
-        backgroundImage: `url('https://res.cloudinary.com/dmaviub4l/image/upload/v1653168442/iltahsjrczfh6eqlgshv.jpg')`,
+        backgroundImage: `url('https://i.imgur.com/nsyLq2q.jpg')`,
         height: `100vh`
       }}>
         <div className="d-flex flex-column min-vh-100 justify-content-center align-items-center">

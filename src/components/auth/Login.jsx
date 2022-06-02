@@ -24,7 +24,7 @@ const Login = () => {
   return (
       <>
           <div id="template-bg-1" className="bg-image" style={{
-                backgroundImage: `url('https://res.cloudinary.com/dmaviub4l/image/upload/v1653168442/iltahsjrczfh6eqlgshv.jpg')`,
+                backgroundImage: `url('https://i.imgur.com/nsyLq2q.jpg')`,
                 
             }}>
               
