@@ -10,6 +10,7 @@ export const registerAsync = (email, pass, nombre) => {
                 await updateProfile(auth.currentUser, { displayName: nombre })
                 dispatch(registerSync(email, pass, nombre))
                 console.log('Usuario Registrado de manera exitosa')
+                alert('Bienvenid@ '+ user.email )
             })
             .catch(error => {
                 console.warn(error, 'No autorizado')
