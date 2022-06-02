@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { Button, Card } from 'react-bootstrap';
 import { url } from '../helpers/url';
 import '../styles/styles.css'
+import Footer from './Footer';
 
 const Home = () => {
   const [pokeArray, setPokeArray] = useState([]);
@@ -50,6 +51,7 @@ const Home = () => {
             ))
           }
         </div>
+        <Footer/>
       </div>      
     </>
   )

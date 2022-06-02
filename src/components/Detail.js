@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Card, CardGroup, ListGroup } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import Footer from './Footer';
 
 const Detail = () => {
     const [detail, setDetail] = useState([]);
@@ -56,6 +57,7 @@ const Detail = () => {
                     </Card>
                   </CardGroup>
                 </div>
+                <Footer/>
               </div>
             ))
           }
