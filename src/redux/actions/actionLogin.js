@@ -29,7 +29,7 @@ export const loginAsync = (email, password) => {
             .then(({ user }) => {
                 dispatch(loginSync(user.email, user.password))
                 console.log('Usuario autorizado')                              
-                alert(user.email(), 'Bienvenido')
+                alert('Bienvenid@ '+ user.email )
             })
             .catch(error => {
                 console.warn(error, 'No autorizado')
@@ -51,6 +51,7 @@ export const loginGoogle = () => {
         signInWithPopup(auth, google)
             .then(({ user }) => {
                 console.log(user, 'Usuario autorizado')
+                alert('Bienvenid@ '+ user.email )
             })
             .catch(error => {
                 console.warn(error, 'No autorizado')

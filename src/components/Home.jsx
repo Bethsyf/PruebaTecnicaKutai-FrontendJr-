@@ -15,6 +15,7 @@ const Home = () => {
           axios.get(resp.data.results[i].url)
             .then(result => {
               setPokeArray(pokeArray => [...pokeArray, result.data])
+              
             })
         }
       })
