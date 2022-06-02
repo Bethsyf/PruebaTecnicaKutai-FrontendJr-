@@ -33,7 +33,7 @@ export const loginAsync = (email, password) => {
             })
             .catch(error => {
                 console.warn(error, 'No autorizado')
-                alert('Usuario No registrado')
+                
             })
     }
 }
